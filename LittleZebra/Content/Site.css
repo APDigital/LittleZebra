@@ -1,14 +1,15 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: #474c55;
 }
-
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
 }
-
+input:focus {
+    outline: none;
+}
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
@@ -21,4 +22,156 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+/*navigation bar*/
+nav {
+    margin-bottom: -20px !important;
+    border-top: 5px solid #fec01e !important;
+    background-color: #ffffff !important;
+}
+.navbar-collapse {
+    padding-left: 140px !important;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.navbar-header img {
+    width: 150px;
+    margin-top: -15px;
+}
+.navbar-brand {
+    padding-top:-10px;
+}
+.search {
+    background-color: transparent !important;
+    border-bottom-color: transparent !important;
+    border-color: transparent !important;
+    color: #474c55!important;
+}
+.form-group {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-control {
+    border-color: transparent !important;
+}
+
+.navbar-form {
+    float: right;
+    padding-right: 150px !important;
+}
+
+/*donate widget*/
+.donate {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.donate h3{
+    padding:15px 0;
+
+}
+.donate h4{
+    padding:10px 0;
+}
+.formBox {
+    max-width: 550px;
+    margin-left: 31% !important;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+.formBox h4 {
+        text-align: center;
+        padding-top: 30px;
+        color: #6db420;
+}
+.formBox-content {
+    padding-left: 35px !important;
+    padding-bottom:30px;
+}
+select {
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    width: 250px;
+    height: 35px;
+    margin-bottom: 10px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.num {
+    border: none;
+}
+.other {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding-top: 3px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+.side-img {
+    background-image: url(../Content/Images/giraffe-image.jpg);
+    height: 400px;
+    background-position: 50% 35%;
+    background-size: 400%;
+}
+
+
+button {
+    background-color: #6db420 !important;
+    border-bottom: 2px solid #4c7d16 !important;
+    color: white !important;
+}
+
+/*About Section*/
+
+.about-content{
+    margin-left:100px!important;
+    padding-bottom:50px!important;
+} 
+.about h3, h4 {
+    text-align: center;
+    padding: 15px;
+}
+.about p{
+    padding:10px;
+}
+.btnHist {
+    background-color: #474c55 !important;
+    border-bottom: 2px solid #2A2D33 !important;
+    font-size: 10px;
+}
+.btnInvolve {
+    background-color: #fec01e !important;
+    border-bottom: 2px solid #CB9918 !important;
+    font-size: 10px;
+}
+.about img{
+    width: 340px;
+}
+/*Footer Section*/
+footer {
+    background-color: #474c55;
+    color:white;
+    padding:15px 0;
+}
+footer img {
+    padding:0 2px;
+}
+.right{
+    float:right!important;
+}
+.white-logo{
+    width:200px;
+   margin-left:-35px;
+   padding-bottom:55px;
+}
+.address{
+    text-align:right;
 }
