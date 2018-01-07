@@ -26,9 +26,9 @@ textarea {
 
 /*navigation bar*/
 nav {
-    margin-bottom: -20px !important;
-    border-top: 5px solid #fec01e !important;
-    background-color: #ffffff !important;
+    margin-bottom: -20px ;
+    border-top: 5px solid #fec01e ;
+    background-color: #ffffff ;
 }
 .navbar-collapse {
     padding-left: 140px !important;
@@ -53,7 +53,7 @@ nav {
     border-radius: 4px;
 }
 .form-control {
-    border-color: transparent !important;
+    border-color: transparent ;
 }
 
 .navbar-form {
