@@ -116,10 +116,15 @@ input[type=number]::-webkit-outer-spin-button {
     margin-left: 5px;
 }
 .side-img {
-    background-image: url(../Content/Images/giraffe-image.jpg);
     height: 400px;
-    background-position: 50% 35%;
-    background-size: 400%;
+    width: 137.5px !important;
+    overflow: hidden;
+
+}
+.side-img img{
+    height: 400px;
+    transform:translateX(-200px);
+   
 }
 
 

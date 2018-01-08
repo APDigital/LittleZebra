@@ -37,15 +37,15 @@
         <h3><strong>DONATE TODAY</strong></h3>
         <h4>Help protecting the planet today, become a Little Zebra ambassador</h4>
         <div class="formBox row">
-            <div class="container formBox-content col-md-9">
+            <div class="container formBox-content col-md-9" >
                 <h4>MAKE A DONATION</h4>
                 <br />
-                <p>
+                <p >
                     I want to help
-                    <select>
-                        <option value="giraffe">a Giraffe</option>
-                        <option value="leopard">a Leopard</option>
-                        <option value="zebra">a Zebra</option>
+                    <select id="animalSelect">
+                        <option id="opt" value="Content/Images/giraffe-image.jpg">Giraffe</option>
+                        <option id="opt" value="Content/Images/rhino-image.jpg">Rhino</option>
+                        <option id="opt" value="Content/Images/tiger-image.jpg">Tiger</option>
                     </select>
                 </p>
                 <p>
@@ -56,16 +56,23 @@
                         <tr>
                             <td>
                                 <p>
-                                    <button type="button" class="btn btn-default">£3</button>
-                                    <button type="button" class="btn btn-default">£5</button>
-                                    <button type="button" class="btn btn-default">£10</button>
+                                    <button type="button" class="btn btn-default disableOnInput">£3</button>
+                                    <button type="button" class="btn btn-default disableOnInput">£5</button>
+                                    <button type="button" class="btn btn-default disableOnInput">£10</button>
                                     or
                                 </p>
                             </td>
                             <td>
                                 <div class="input-group other">
                                     <span class="input-group-addon">£</span>
-                                    <input class="num" type="number">
+                                    <input class="num" type="number" id="searchInput">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="warn" hidden="hidden">
+                            <td>
+                                <div class="alert alert-danger" role="alert">
+                                    Number cannot be less than 11
                                 </div>
                             </td>
                         </tr>
@@ -80,8 +87,8 @@
                 <button type="button" class="btn btn-default">DONATE NOW</button>
 
             </div>
-            <div class="side-img col-md-3">
-
+            <div class="side-img col-md-3 ">
+                <img name="image-swap" id="img" src="Content/Images/giraffe-image.jpg" />
             </div>
         </div>
     </div>
@@ -151,6 +158,8 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/widget.js" ></script>
+   
 
 </body>
 </html>
